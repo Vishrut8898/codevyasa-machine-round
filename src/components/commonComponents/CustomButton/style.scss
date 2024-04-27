@@ -1,0 +1,57 @@
+.custom-button {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+// variants styling
+.primary {
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #acacac;
+    transition: .3s ease;
+
+    &:hover {
+        border: 1px solid #666;
+    }
+}
+
+.secondary {
+    background-color: #a78650;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: .3s ease;
+
+    &:hover {
+        background-color: #fff !important;
+        color: #a78650;
+        border: 1px solid #a78650;
+    }
+}
+
+.tertiary {
+    background-color: transparent;
+    color: #a78650;
+    border: 1px solid #a78650;
+    transition: .3s ease;
+
+    &:hover {
+        border: 1px solid #acacac;
+        color: #acacac;
+
+        svg {
+            fill: #acacac;
+        }
+    }
+}
+
+.iconed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    line-height: normal;
+}

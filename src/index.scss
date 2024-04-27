@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    width: 94%;
+    height: 100%;
+    margin: 0;
+    padding: 35px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 15px;
+    position: relative;
+    left: 6%;
+    background-color: #f3f4f6;
+    transition: width .5s ease;
+    overflow-x: hidden;
+
+    .main-left-section {
+        width: 100%;
+        transition: width .5s ease;
+    }
+
+    &.filter-active {
+        .main-left-section {
+            flex-basis: 78%;
+            height: auto;
+            position: relative;
+            transition: flex-basis .5s ease;
+        }
+
+        .filter-container {
+            flex-basis: 22%;
+            height: auto;
+            position: relative;
+            background-color: #fff;
+            transition: flex-basis .5s ease;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    main.filter-active {
+        .main-left-section {
+            flex-basis: 74%;
+        }
+
+        .filter-container {
+            flex-basis: 24%;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    main.filter-active {
+        .main-left-section {
+            flex-basis: 74%;
+        }
+
+        .filter-container {
+            flex-basis: 24%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        width: 92%;
+        left: 8%;
+        flex-direction: column;
+
+        &.filter-active {
+            overflow: hidden;
+
+            .main-left-section {
+                flex-basis: 100%;
+            }
+
+            .filter-container {
+                flex-basis: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    main {
+        width: 86%;
+        left: 14%;
+        padding: 15px;
+    }
+}

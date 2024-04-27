@@ -1,0 +1,33 @@
+.side-bar {
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #272c32;
+    z-index: 1;
+
+    .side-bar-items {
+        list-style: none;
+        margin: 30px auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .side-bar {
+        width: 8%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .side-bar {
+        width: 14%;
+    }
+}

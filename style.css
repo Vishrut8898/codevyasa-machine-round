@@ -1,0 +1,45 @@
+.table-section {
+  width: 100%;
+  margin-top: 30px;
+}
+.table-section table.table-container {
+  width: 100%;
+}
+.table-section table.table-container thead {
+  background-color: #f3ece3;
+}
+.table-section table.table-container thead th {
+  padding: 12px 0;
+  text-align: left;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+.table-section table.table-container thead th span {
+  margin-right: 4%;
+}
+.table-section table.table-container thead th svg {
+  cursor: pointer;
+}
+.table-section table.table-container thead th input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  border: 2px solid #ccc;
+}
+.table-section table.table-container tbody {
+  width: 100%;
+}
+.table-section table.table-container tbody tr {
+  padding: 14px 0;
+}
+.table-section table.table-container tbody tr td {
+  font-weight: 500;
+  font-size: 14px;
+}
+.table-section table.table-container tbody tr td input {
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  border: 2px solid #ccc;
+}/*# sourceMappingURL=style.css.map */
